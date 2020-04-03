@@ -1,0 +1,70 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="iW$EQPb5BhD#]):T59qn">utterance_remainder</variable>
+    <variable id="d0).R3rikPpdS_}}ebR]">something</variable>
+  </variables>
+  <block type="on_keyphrase" id="o|PAV%!!sPct@Cz1Z2`." x="135" y="101">
+    <value name="keyphrase">
+      <shadow xmlns="http://www.w3.org/1999/xhtml" type="text" id="Tnit`:Ju1)u`MJIfTZ#a">
+        <field name="TEXT"></field>
+      </shadow>
+      <block type="text" id="Tnit`:Ju1)u`MJIfTZ#a">
+        <field name="TEXT">r2d2 says</field>
+      </block>
+    </value>
+    <statement name="CODE">
+      <block type="voice_speak" id=",F.nFh}0[%}Bdb`2[6Ld">
+        <field name="voice">R2D2__beepspeak__R2D2</field>
+        <value name="text">
+          <shadow type="text" id="pylW4-LJysT9|csIHwSy">
+            <field name="TEXT"/>
+          </shadow>
+          <block type="variables_get" id="4mD1s1{%enb2k4lC`)*}">
+            <field name="VAR" id="iW$EQPb5BhD#]):T59qn">utterance_remainder</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="on_phrase_examples" id="_uGOUwJqMt8Efi2dwC,k" x="128" y="231">
+    <mutation xmlns="http://www.w3.org/1999/xhtml" items="2"></mutation>
+    <value name="PVALUE1">
+      <shadow type="multi_text" id="sq%`Sc(-shm+`$]/w`lZ">
+        <field name="NAME"/>
+      </shadow>
+      <block type="multi_text" id="wg*me/1BuqAQ*WYkGQZ/">
+        <field name="NAME">say</field>
+        <value name="NAME">
+          <block type="variables_get" id="KZFfRQ(=s}8qH3$1mgM9">
+            <field name="VAR" id="d0).R3rikPpdS_}}ebR]">something</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="PVALUE2">
+      <shadow type="multi_text" id="[G2:Izg3k$:D,Hgv6UU~">
+        <field name="NAME"/>
+      </shadow>
+      <block type="multi_text" id="H0p2Jmxtss@}h80K{`+4">
+        <field name="NAME">repear after me</field>
+        <value name="NAME">
+          <block type="variables_get" id="blAyXY9+zRU*jx^h*iy#">
+            <field name="VAR" id="d0).R3rikPpdS_}}ebR]">something</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="CODE">
+      <block type="speak" id="?8HJjem*s6~:*3+j7QB6">
+        <value name="MESSAGE">
+          <shadow type="text" id="+ZM1*hn5iS7J?,?4}2JK">
+            <field name="TEXT"/>
+          </shadow>
+          <block type="variables_get" id="@3G@xN0dkf4`=e82NI45">
+            <field name="VAR" id="d0).R3rikPpdS_}}ebR]">something</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

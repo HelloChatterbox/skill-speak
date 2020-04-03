@@ -1,14 +1,12 @@
 
-# Astronauts - Chatterbox Skill
+# Speak - Chatterbox Skill
 
-Find out who is currently in orbit
-
-Using chatterbox web_apis extensions you can query the [people in space API](http://open-notify.org/Open-Notify-API/People-In-Space/)
+Tell chatterbox to say something
 
 Examples
 
-    "Who is in space?"
-    "How many people in orbit?"
+    "say hello world"
+    "repeat after me Technology should be invisible"
 
-![](astronauts.png)
+![](speak.png)
 
